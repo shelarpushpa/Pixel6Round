@@ -1,2 +1,40 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+          <script src="script.js"></script>
+        
+  
+        
+    </head>
+  
+    <body>
+        <form name="RegForm" onsubmit="validation()"  >
+            <p>Full Name: <input type="text" 
+                            size="30" name="name" /></p>
+            
+            <br />
+            <p>E-mail Address: <input type="text" 
+                            size="30" name="email" /></p>
+            <br />
+         
+            <p>phone: <input type="text" 
+                        size="30" name="phone" id="phone" onkeypress="javascript:return isNumber(event)" oninput="check_phone()" /> </p>
+               <p id="demo"></p>
+               <p id="demo1"></p>
+           
+            <br />
+ 
+            <br />
+            <br />
+ 
+            <p>
+                <input type="submit" 
+                       value="submit" name="submit"  />
+
+                
+            </p>
+           
+           
+        </form>
+    </body>
 </html>
